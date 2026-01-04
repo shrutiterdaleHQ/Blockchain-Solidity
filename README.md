@@ -1,7 +1,7 @@
 **To deploy Contract:
 **	
--Open project using Remix IDE
--files(contracts) will have .sol extensions. (Save files unders contracts folder)
+- Open project using Remix IDE
+- files(contracts) will have .sol extensions. (Save files unders contracts folder)
 	3.select compiler version to match pragma solidity version mentioned in the contract
 	4.click compile button
 	5.Click deploy button
@@ -17,16 +17,19 @@
 BASICS OF SOLIDITY:
 ---------------------
 
-**//SPDX-License-Identifier: **MIT (Solidity compiler requires it in recent versions to reduce license warnings.)
-**pragma solidity ^0.8.17;** A compiler directive that tells Solidity which compiler versions are allowed.
+**//SPDX-License-Identifier:**
+ - MIT (Solidity compiler requires it in recent versions to reduce license warnings.)
+**pragma solidity ^0.8.17;**
+ A compiler directive that tells Solidity which compiler versions are allowed.
 
 
 **Data Types in Solidity -
-**	Value types-bool, int, uint(uint256- unsignes integer), address(can receive ETH) , bytes( bytes1...bytes32), enum 
-	Reference Types - string , bytes (dynamic), structure, array, mapping 
+**
+- Value types-bool, int, uint(uint256- unsignes integer), address(can receive ETH) , bytes( bytes1...bytes32), enum
+- Reference Types - string , bytes (dynamic), structure, array, mapping 
 
 **Variables**:
-	State: Stored on chain
+	- State: Stored on chain 
 	Local: memory only
 	Immutable and Constants:
 
@@ -69,9 +72,10 @@ BASICS OF SOLIDITY:
 	1 ether = 10^18 wei
 
 **Receiving Eth
-**	receive() external payable {}- simple ETH deposits (like a wallet)
-	fallback() external payable {}- proxy contracts, logging, or handling unexpected calls
-    Both receive() and fallback() are special functions that allow a contract to handle plain Ether transfers or calls that don’t match any other function.
+**	
+- receive() external payable {}- simple ETH deposits (like a wallet)
+- 	fallback() external payable {}- proxy contracts, logging, or handling unexpected calls
+- 	 Both receive() and fallback() are special functions that allow a contract to handle plain Ether transfers or calls that don’t match any other function.
 
 **Global Objects provided by EVM:msg, tx, block globals 
 **	Some of them are 
