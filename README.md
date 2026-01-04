@@ -82,10 +82,10 @@ Global Objects provided by EVM:msg, tx, block globals
 	tx.gasprice: Gas price paid
 
 
-Error Handling
- Require: Condition check, require(balance >= amount, "Not enough balance"); Check something important. If it’s false, stop and refund remaining gas.Refunds unused gas.
- revert: Custom Error. Stop execution right now and explain why. revert("Transfer failed"); or custom error(cheaper)-error NotAuthorized();
- assert: Internal Error check. Check internal invariants .This should NEVER fail. If it does, something is seriously wrong.Consumes all remaining gas.Consumes all remaining gas
+**Error Handling**
+- Require: Condition check, require(balance >= amount, "Not enough balance"); Check something important. If it’s false, stop and refund remaining gas.Refunds unused gas.
+- revert: Custom Error. Stop execution right now and explain why. revert("Transfer failed"); or custom error(cheaper)-error NotAuthorized();
+- assert: Internal Error check. Check internal invariants .This should NEVER fail. If it does, something is seriously wrong.Consumes all remaining gas.Consumes all remaining gas
 
 
 Events and Emit
