@@ -1,17 +1,35 @@
-**To deploy Contract:
-**	
-- Open project using Remix IDE
-- files(contracts) will have .sol extensions. (Save files unders contracts folder)
-	3.select compiler version to match pragma solidity version mentioned in the contract
-	4.click compile button
-	5.Click deploy button
-	6. You can interact or add inputs using section deployed contracts
+# Solidity Basics & Deployment Guide
 
-**Additional information: To deploy on testnet , Metamask can be used.
-**- Connect metamask account to sepolia/other testnet
-- use this account to connect to testnet
-- Compile and then deploy- it will be deployed on the testnet
-- Use terminal to get transaction hash , transfer hash etc. This can then be tracked on sepolia testnet.
+---
+
+## 1. Contract Deployment (Remix IDE)
+
+1. Open your project in **Remix IDE**.  
+2. Save Solidity files with the `.sol` extension under the `contracts` folder.  
+3. Select the **compiler version** matching the `pragma solidity` version in the contract.  
+4. Click **Compile**.  
+5. Click **Deploy**.  
+6. Interact with the deployed contract via the **Deployed Contracts** section.
+
+### 1.1 Deploying on Testnet (e.g., Sepolia)
+
+- Connect your **MetaMask** account to the desired testnet.  
+- Use this account to deploy contracts on the testnet.  
+- Compile and deploy the contract; it will be deployed on the testnet.  
+- Use the terminal to get **transaction hash**, **transfer hash**, etc.  
+- Track transactions on the testnet explorer (e.g., Sepolia).
+
+---
+
+## 2. Basics of Solidity
+
+### 2.1 SPDX License & Pragma
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+SPDX-License-Identifier: Reduces compiler license warnings.
+
+Pragma: Specifies which compiler versions are allowed.
 
 ----------------------
 BASICS OF SOLIDITY:
